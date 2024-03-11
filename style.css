@@ -1,0 +1,27 @@
+* {}
+
+body {
+    background-color: rgb(231, 224, 224);
+}
+
+/*EDIÇÃO DE FORMULARIO*/
+#form-login form, p{
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-acesso{
+    background-color: rgb(255, 255, 255);
+}
+
+#form-login input, button{
+    
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+
