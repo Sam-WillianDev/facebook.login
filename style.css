@@ -2,78 +2,104 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--fontePrincipal);
 }
 
 body {
-    display: block;
     border: none;
     height: 100%;
     width: 100%;
-    background-color: var(--corbase);
+    background-color: var(--corBase);
 }
 
+/*CORES E FONTE*/
 :root {
-    --corPrincipal:#1877F2;
-    --corSecundaria:#F0F2F5;
-    --corEscura:#1C1E21 ;
-    --corbase: #F0F2F5;
+    --corPrincipal: #1877F2;
+    --corSecundaria: #fffffffd;
+    --corEscura: #1C1E21;
+    --corBase: #F0F2F5;
+    --fontePrincipal: Helvetica, sans-serif;
+
+
 }
 
 
 /*PAGINA PRINCIPAL*/
-.pagina-principal{
+.sessao-principal {
+    display: block;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    
+}
+
+#sessao-acesso {
     display: flex;
-    justify-content: center;
-    margin: 110px 0px 30px 0px;
+    justify-content: space-around;
+    max-width: 1555px;
+    margin: auto;
 }
 
-.logo-texto{
+.logo-texto {
+    margin: 0px 30px 0px 40px;
+    padding-top: 200px;
     font-size: 28px;
-    width: 700px;
-    text-align: justify;
-    padding: 50px;
+    width: 500px;
+    max-width: 18em;
+
+
 }
 
-.logo-texto h1{
+
+.logo-texto h1 {
     color: var(--corPrincipal);
+    font-size: 2.2em;
     font-weight: 750;
+
 }
 
-.logo-texto h2{
-    font-size:30px;
+.logo-texto p {
+    text-decoration: none;
+    font-weight: normal;
 }
+
+
 
 
 /*EDIÇÃO DE FORMULARIO*/
-#form-login{
-    display: flex;
-    max-width: 2000px;
-    justify-content: space-around;
-}
-
-
 .form-acesso {
-
-    height: 300px;
     width: 400px;
+    height: 350px;
     padding: 20px;
-    font-size: 13px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)
+    border-radius: 10px;
+    background-color: var(--corSecundaria);
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.143);
+    margin-top: 100px;
+
 }
 
 .form-acesso input,
-button{
-    margin-bottom: 15px;
+button {
+    margin-bottom: 7px;
     width: 100%;
-    height: 40px;
-
+    height: 50px;
     border: 1px solid rgb(241, 237, 237);
     border-radius: 5px;
-    
+
+}
+
+.form-acesso nav,
+a {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    color: var(--corPrincipal);
+}
+
+.descricao {
+    padding: 50px 0px 0px 0px;
+    font-size: 15px;
+    text-align: center;
+    width: 400px;
 }
 
 
@@ -83,17 +109,28 @@ button{
     background-color: rgba(0, 115, 255, 0.819);
 }
 
-.botao-CriarConta {
-    margin:10px;
+.area-botao-criarConta {
+    text-align: center;
+}
+
+.area-botao-criarConta button {
+    margin: 10px;
     color: white;
     background-color: rgb(37, 198, 40);
     width: 50%;
 }
 
-#botaoEntrar,
-#botao-CriarConta {
+button {
     font-weight: 700;
-
 }
 
+
 /*RODAPE*/
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
